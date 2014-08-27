@@ -6,14 +6,14 @@ angular.module('social-share').directive('socialShare', [function() {
     templateUrl: 'social-share.html',
     compile: function(tElement, tAttrs, transclude) {
       return {
-        pre: function(scope, iElement, iAttrs, controller) {
-          var sharingMethods = Object.keys(iAttrs.$attr).map(function(method) {
+        pre: function($scope, iElement, iAttrs, controller) {
+          $scope.sharingMethods = Object.keys(iAttrs.$attr).map(function(method) {
             method = method.toLowerCase();
             return "twitter facebook google pinterest email".indexOf(method) > -1 ? method : null;
           }).filter(function(method) {
             return method != undefined;
           });
-          console.log(sharingMethods);
+          console.log($scope.sharingMethods);
 
           iElement.bind('click', function() {
             debugger;
