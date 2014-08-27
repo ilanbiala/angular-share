@@ -14,7 +14,7 @@ angular.module('social-share').directive('socialShare', ['$window', 'Share',
 
         $scope.sharingUrls = {
           twitter: encodeURI('https://twitter.com/intent/tweet?text=A simple, light, flexible, and good-looking share button&url=http://sharebutton.co/'),
-          facebook: encodeURI('https://www.facebook.com/dialog/share?app_id=184484190795&redirect_uri=http://google.com/'),
+          facebook: encodeURI('https://www.facebook.com/dialog/share?app_id=681511458592219&redirect_uri=http://google.com/'),
           googleplus: encodeURI('https://plus.google.com/share?url=http://sharebutton.co/'),
           email: encodeURI('mailto:?subject=Awesome share button built in angular&body=Look at this!'),
         };
