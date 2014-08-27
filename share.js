@@ -7,7 +7,6 @@ angular.module('social-share').directive('socialShare', [function() {
     compile: function(tElement, tAttrs, transclude) {
       return {
         pre: function(scope, iElement, iAttrs, controller) {
-          var possibleSharingMethods = []
           var sharingMethods = Object.keys(iAttrs.$attr).map(function(method) {
             method = method.toLowerCase();
             return "twitter facebook google pinterest email".indexOf(method) > -1 ? method : null;
