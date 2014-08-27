@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('font/icomoon.eot?8cxj5g');
+	src:url('font/icomoon.eot?#iefix8cxj5g') format('embedded-opentype'),
+		url('font/icomoon.woff?8cxj5g') format('woff'),
+		url('font/icomoon.ttf?8cxj5g') format('truetype'),
+		url('font/icomoon.svg?8cxj5g#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-paperplane:before {
+	content: "\e600";
+}
+.icon-twitter:before {
+	content: "\e601";
+}
+.icon-facebook:before {
+	content: "\e602";
+}
+.icon-googleplus:before {
+	content: "\e603";
+}
+.icon-pinterest:before {
+	content: "\e604";
+}
+.icon-share:before {
+	content: "\e605";
+}
+
+.social-share {
+	height: 20px;
+	line-height: 1;
+}
+
+.social-share .icon-share {
+	margin-right: 5px;
+	font-size: 16px;
+}
+
+.social-share p {
+	font-size: 20px;
+	display: inline-block;
+	margin: 0;
+}
+
+.social-share ul {
+	list-style: none;
+}
+
+.social-share ul li {
+	display: inline-block;
+	margin: -2px;
+}
+
+.social-share ul li a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.social-share ul li a i {
+	padding: 16px;
+	height: 16px;
+	display: inline-block;
+	color: white;
+}
+
+.social-share ul li a {
+	&:hover {
+		.icon-twitter {
+			color: #111;
+		}
+
+		.icon-facebook {
+			color: #111;
+		}
+
+		.icon-googleplus {
+			color: #111;
+		}
+
+		.icon-pinterest {
+			color: #111;
+		}
+
+		.icon-paperplane {
+			color: #111;
+		}
+	}
+
+	.icon-twitter {
+		background: #7FDBFF;
+	}
+
+	.icon-facebook {
+		background: #0074D9;
+	}
+
+	.icon-googleplus {
+		background: #FF4136;
+	}
+
+	.icon-pinterest {
+		background: #AC1D1A;
+	}
+
+	.icon-paperplane {
+		background: #2ECC40;
+	}
+}
