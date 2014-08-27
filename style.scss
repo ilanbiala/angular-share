@@ -23,7 +23,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-paperplane:before {
+.icon-email:before {
 	content: "\e600";
 }
 .icon-twitter:before {
@@ -45,6 +45,34 @@
 .social-share {
 	height: 20px;
 	line-height: 1;
+	display: inline-block;
+}
+
+.social-share button {
+	border: 3px solid lighten(#ddd, 7%);
+	padding: 7px 12px;
+	background: lighten(#ddd, 10%);
+	-webkit-appearance: none;
+	-webkit-transition: background 0.15s ease, border 0.15s ease;
+	-o-transition: background 0.15s ease, border 0.15s ease;
+	transition: background 0.15s ease, border 0.15s ease;
+	outline: none;
+
+	&:hover {
+		-webkit-transition: background 0.15s ease, border 0.15s ease;
+		-o-transition: background 0.15s ease, border 0.15s ease;
+		transition: background 0.15s ease, border 0.15s ease;
+		border: 3px solid lighten(#ddd, 5%);
+		background: lighten(#ddd, 8%);
+	}
+
+	&:active {
+		-webkit-transition: background 0.15s ease, border 0.15s ease;
+		-o-transition: background 0.15s ease, border 0.15s ease;
+		transition: background 0.15s ease, border 0.15s ease;
+		border: 3px solid lighten(#ddd, 4%);
+		background: lighten(#ddd, 6%);
+	}
 }
 
 .social-share .icon-share {
@@ -56,15 +84,20 @@
 	font-size: 20px;
 	display: inline-block;
 	margin: 0;
+	color: #111;
 }
 
 .social-share ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: absolute;
 }
 
 .social-share ul li {
 	display: inline-block;
-	margin: -2px;
+	margin: 0;
 }
 
 .social-share ul li a {
@@ -73,14 +106,47 @@
 }
 
 .social-share ul li a i {
-	padding: 16px;
-	height: 16px;
+	padding: 14px 18px;
+	font-size: 18px;
 	display: inline-block;
 	color: white;
+	-webkit-transition: color 0.15s ease;
+	-o-transition: color 0.15s ease;
+	transition: color 0.15s ease;
+}
+
+.social-share div.radius, ul.flat li:first-child a i {
+	border-radius: 0;
+}
+
+.social-share div.radius, ul.flat li:last-child a i {
+	border-radius: 0;
+}
+
+.social-share div.radius, ul.radius li:first-child a i {
+	border-radius: 3px 0 0 3px;
+}
+
+.social-share div.radius, ul.radius li:last-child a i {
+	border-radius: 0 3px 3px 0;
+}
+
+.social-share div.round, ul.round li:first-child a i {
+	border-radius: 6px 0 0 6px;
+}
+
+.social-share div.round, ul.round li:last-child a i {
+	border-radius: 0 6px 6px 0;
 }
 
 .social-share ul li a {
 	&:hover {
+		i {
+			-webkit-transition: color 0.15s ease;
+			-o-transition: color 0.15s ease;
+			transition: color 0.15s ease;
+		}
+
 		.icon-twitter {
 			color: #111;
 		}
@@ -97,7 +163,7 @@
 			color: #111;
 		}
 
-		.icon-paperplane {
+		.icon-email {
 			color: #111;
 		}
 	}
@@ -118,7 +184,7 @@
 		background: #AC1D1A;
 	}
 
-	.icon-paperplane {
+	.icon-email {
 		background: #2ECC40;
 	}
 }

@@ -1,5 +1,9 @@
-<i class="icon-share"></i>
-<p>Share</p>
-<ul>
-  <li ng-repeat="method in sharingMethods"><a href=""><i class="icon-{{method}}"></i></a></li>
+<button ng-click="share.isOpen = !share.isOpen"
+     ng-class="share.options.style">
+  <i class="icon-share"></i>
+  <p>Share</p>
+</button>
+<ul ng-if="share.isOpen"
+    ng-class="share.options.style">
+  <li ng-repeat="method in sharingMethods"><a href ng-click="openShareLink(method.name)"><i class="icon-{{method.name}}"></i></a></li>
 </ul>

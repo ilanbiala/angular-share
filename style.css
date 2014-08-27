@@ -16,7 +16,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-paperplane:before {
+.icon-email:before {
   content: "\e600"; }
 
 .icon-twitter:before {
@@ -36,7 +36,30 @@
 
 .social-share {
   height: 20px;
-  line-height: 1; }
+  line-height: 1;
+  display: inline-block; }
+
+.social-share button {
+  border: 3px solid #efefef;
+  padding: 7px 12px;
+  background: #f7f7f7;
+  -webkit-appearance: none;
+  -webkit-transition: background 0.15s ease, border 0.15s ease;
+  -o-transition: background 0.15s ease, border 0.15s ease;
+  transition: background 0.15s ease, border 0.15s ease;
+  outline: none; }
+  .social-share button:hover {
+    -webkit-transition: background 0.15s ease, border 0.15s ease;
+    -o-transition: background 0.15s ease, border 0.15s ease;
+    transition: background 0.15s ease, border 0.15s ease;
+    border: 3px solid #eaeaea;
+    background: #f1f1f1; }
+  .social-share button:active {
+    -webkit-transition: background 0.15s ease, border 0.15s ease;
+    -o-transition: background 0.15s ease, border 0.15s ease;
+    transition: background 0.15s ease, border 0.15s ease;
+    border: 3px solid #e7e7e7;
+    background: #ececec; }
 
 .social-share .icon-share {
   margin-right: 5px;
@@ -45,25 +68,55 @@
 .social-share p {
   font-size: 20px;
   display: inline-block;
-  margin: 0; }
+  margin: 0;
+  color: #111; }
 
 .social-share ul {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: absolute; }
 
 .social-share ul li {
   display: inline-block;
-  margin: -2px; }
+  margin: 0; }
 
 .social-share ul li a {
   text-decoration: none;
   display: inline-block; }
 
 .social-share ul li a i {
-  padding: 16px;
-  height: 16px;
+  padding: 14px 18px;
+  font-size: 18px;
   display: inline-block;
-  color: white; }
+  color: white;
+  -webkit-transition: color 0.15s ease;
+  -o-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
 
+.social-share div.radius, ul.flat li:first-child a i {
+  border-radius: 0; }
+
+.social-share div.radius, ul.flat li:last-child a i {
+  border-radius: 0; }
+
+.social-share div.radius, ul.radius li:first-child a i {
+  border-radius: 3px 0 0 3px; }
+
+.social-share div.radius, ul.radius li:last-child a i {
+  border-radius: 0 3px 3px 0; }
+
+.social-share div.round, ul.round li:first-child a i {
+  border-radius: 6px 0 0 6px; }
+
+.social-share div.round, ul.round li:last-child a i {
+  border-radius: 0 6px 6px 0; }
+
+.social-share ul li a:hover i {
+  -webkit-transition: color 0.15s ease;
+  -o-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
 .social-share ul li a:hover .icon-twitter {
   color: #111; }
 .social-share ul li a:hover .icon-facebook {
@@ -72,8 +125,8 @@
   color: #111; }
 .social-share ul li a:hover .icon-pinterest {
   color: #111; }
-.social-share ul li a:hover .icon-paperplane {
-  color: #11; }
+.social-share ul li a:hover .icon-email {
+  color: #111; }
 .social-share ul li a .icon-twitter {
   background: #7FDBFF; }
 .social-share ul li a .icon-facebook {
@@ -82,5 +135,5 @@
   background: #FF4136; }
 .social-share ul li a .icon-pinterest {
   background: #AC1D1A; }
-.social-share ul li a .icon-paperplane {
+.social-share ul li a .icon-email {
   background: #2ECC40; }
